@@ -1,0 +1,88 @@
+.ServicesContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1556217256-dcd735bb8711?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:90vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ServicesContainer h1{
+    color: #000;
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    margin: 0 1.5rem;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 2rem 0 ;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .gridItem {
+   
+    padding: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gridItem img{
+    width: 5rem;
+    height:5rem
+  }
+  .gridItem span{
+    font-size: 1.4rem;
+    margin: 0.5rem;
+  }
+  .gridIcon{
+    color: #2196F3;
+     font-size: 5rem;
+  }
+  
+
+@media screen and (max-width:1024px){}
+@media screen and (max-width:768px){
+  .ServicesContainer{
+    height:120vh;
+    padding: 0.8rem;
+  }
+  .ServicesContainer h1{
+   
+    background-color: none;
+  }
+  .gridItem{
+    width: 11rem;
+    padding: 1.6rem;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 0 0.1rem;
+  }
+}
+@media screen and (max-width:480px){
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 0 0.1rem;
+  }
+  .gridItem img{
+    width: 3rem;
+    height:3rem
+  }
+  .gridItem{
+    padding: 1rem 0.01rem;
+  }
+  .ServicesContainer{
+    height:90vh;
+    padding: 0rem;
+  }
+}

@@ -1,0 +1,47 @@
+.container{
+    /* background-color: rgb(70, 146, 104); */
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    margin-top: 7rem;
+    
+}
+.input{
+    padding: 1rem;
+    width: 20rem;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 17rem;
+}
+
+.btn{
+    padding: 0.6rem;
+    width: 20rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-left: 18rem;
+}
+.picture{
+    display: flex;  
+    margin-top: 1rem;
+    border: 1px solid;
+}
+.container h5{
+    margin-left: 21rem;
+}
+.picture img{
+    height: 39.5rem;
+    width: 44rem;
+}
+.container h6{
+margin-left: 20rem;
+}
