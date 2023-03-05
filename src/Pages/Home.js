@@ -16,11 +16,11 @@ function Home() {
   const nevigate = useNavigate();
   let isUserLoggedIn = useRecoilValue(IsLogin);
 
-  useEffect(() => {
-    if (!isUserLoggedIn) {
-      nevigate("/SingIn");
-    }
-  });
+  // useEffect(() => {
+  //   if (!isUserLoggedIn) {
+  //     nevigate("/SingIn");
+  //   }
+  // });
   return (
     <div className={style.container}>
       <div className={style.Navbar}>

@@ -1,21 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef,useState } from "react";
 import style from "./Contact.module.css";
 import { useSpring, animated } from "react-spring";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import swal from "sweetalert";
 function ContactUs() {
+  const[email,setEmail]=useState('')
+  const[name,setName]=useState('')
+  const[message,setMessage]=useState('')
   const introAnimation = useSpring({
     from: { opacity: 0, transform: "translatey(-50px)" },
     to: { opacity: 1, transform: "translatex(0)" },
     // delay: ,
     config: { duration: 1500 },
   });
-  const form = useRef();
 
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     emailjs
       .sendForm(
         "service_vcwku8x",
@@ -31,7 +33,30 @@ function ContactUs() {
         (error) => {
           console.log(error.text);
         }
+       
       );
+      // alert('submitted Succesfully')
+      swal({
+        title: "Email Sent Successfully!",
+        text: "We Will Get In Touch With You.",
+        icon: "success",
+        buttons: {
+          confirm: {
+            text: "Okay",
+            value: true,
+            visible: true,
+            className: style["SweetAlertButton"],
+            closeModal: true,
+          },
+        },
+        dangerMode: false,
+      }).then((value) => {
+        if (value) {
+        }
+      }); 
+      setName('')
+      setEmail('')
+      setMessage('')
   };
   return (
     <>
@@ -42,26 +67,36 @@ function ContactUs() {
             <p>Leave us a message</p>
             <form ref={form} onSubmit={sendEmail}>
               <label>Name</label>
-              <input
+              <input required
                 placeholder="Name"
                 className={style.input}
                 type="text"
                 name="user_name"
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
               />
               <label>Email</label>
               <input
+              required
                 placeholder="Email"
                 className={style.input}
                 type="email"
                 name="user_email"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
               />
               <label>Message</label>
               <textarea
+              required
                 placeholder="Write your Message here"
                 className={style.input}
                 name="message"
+                col='6'
+                row='6'
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
               />
-              <input type="submit" value="Send" className={style.btn} />
+              <button type="submit" value="Send" className={style.btn} >Send</button>
             </form>
           </animated.div>
         </div>
@@ -75,7 +110,7 @@ function ContactUs() {
           ></iframe>
         </div>
       </div>
-      <ToastContainer />
+     
     </>
   );
 }

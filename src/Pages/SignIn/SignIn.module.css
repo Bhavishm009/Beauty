@@ -12,10 +12,12 @@
     width: 20rem;
     margin: 0.5rem;
     border: none;
-    outline: none;
+    /* outline: none; */
     border-radius: 5px;
+    
 
 }
+
 .btn{
     padding: 0.6rem;
     width: 15rem;
@@ -34,4 +36,42 @@
     flex-direction: column ;
     justify-content: center;
     margin-left: 3rem;
+}
+@media screen and (max-width:1040px){
+    .maincont{
+        
+        width: 44rem;
+        margin-left: 5rem;
+    }
+}
+@media screen and (max-width:800px){
+    .maincont{
+        width: 30rem;
+        margin-left: 3rem;
+        
+    }
+    .formcont{
+        margin-left: 0rem;
+    }
+    .input{
+        width: 10rem;
+    }
+    .btn{
+        width: 15rem;
+    }
+}
+@media screen and (max-width:532px){
+    .maincont{
+        width: 15rem;
+        height: 15rem;
+    }
+    .formcont{
+        margin-left: 0rem;
+    }
+    .input{
+        width: 5rem;
+    }
+    .btn{
+        width: 7rem;
+    }
 }

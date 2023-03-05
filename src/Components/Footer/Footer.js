@@ -15,20 +15,20 @@ function CustomFooter() {
       </div>
       </div>
     <ul className={style.socialIcon}>
-      <li><a href="https://www.instagram.com/bhavish_muneshwar" target='_blank'>  <InstagramOutlined style={{ fontSize: '32px', color: '#fff' }}/></a></li>
-      <li><a  href="https://www.facebook.com/bmuneshwar1" target='_blank'><FacebookFilled  style={{ fontSize: '32px', color: '#fff' }}/></a></li>
+      <li><a href="https://www.instagram.com/bhavish_muneshwar" target='_blank' rel="noreferrer">  <InstagramOutlined style={{ fontSize: '32px', color: '#fff' }}/></a></li>
+      <li><a  href="https://www.facebook.com/bmuneshwar1" target='_blank' rel="noreferrer"><FacebookFilled  style={{ fontSize: '32px', color: '#fff' }}/></a></li>
       <li><a href="/"><YoutubeFilled   style={{ fontSize: '32px', color: '#fff' }}/></a></li>
     </ul>
 
-    <ul className={style.menu}>
-    <li><a >Home</a></li>
-    <li><a >Why Us</a></li>  
-    <li><a >Service</a></li>  
-    <li><a >Pricing</a></li>  
-    <li><a>Contact</a></li>  
-    </ul>
+    {/* <ul className={style.menu}>
+    <li>Home</li>
+    <li>Why Us</li>  
+    <li>Service</li>  
+    <li>Pricing</li>  
+    <li>Contact</li>  
+    </ul> */}
     <p>
-    © 2023 Diamond Beauty Zone | All Rights Reserved
+    © 2023 Diamond Beauty Zone | Devloped By Bhavish | All Rights Reserved
     </p>
   </footer>;
 }

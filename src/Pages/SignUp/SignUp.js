@@ -74,10 +74,10 @@ function SignUp() {
     <>
       <Navbar />
       <div className={Style.picture}>
-        <img src='https://www.shutterstock.com/shutterstock/videos/1060587190/thumb/6.jpg?ip=x480' width='20%' alt='signup.jpeg'/>
+        <img  className={Style.pic}src='https://www.shutterstock.com/shutterstock/videos/1060587190/thumb/6.jpg?ip=x480' width='20%' alt='signup.jpeg'/>
       
       <div className={Style.container}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={Style.Form}>
           <CustomInput
             className={Style.input}
             onChange={(e) => setName(e.target.value)}
@@ -116,7 +116,7 @@ function SignUp() {
             type="submit"
           />
            <h6> {error && <p style={{ fontSize: '12px', color: 'red' }}>{error}</p>}</h6>
-          <h5>
+          <h5 style={{marginTop:'-3rem'}}>
             Already have an account?{" "}
             <NavLink style={{ color: "blue" }} to="/SingIn">
               Login Page

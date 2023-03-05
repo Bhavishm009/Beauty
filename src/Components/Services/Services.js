@@ -4,6 +4,7 @@ import ContentCutIcon from "@mui/icons-material/ContentCut";
 import Skincare from "../Images/skincare.png";
 import Body from "../Images/body-massage.png";
 import Spa from "../Images/spa.png";
+
 function Services() {
   return (
     <div id='services' className={style.ServicesContainer}>

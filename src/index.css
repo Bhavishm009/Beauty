@@ -25,3 +25,7 @@ code {
   display: flex;
   align-items: center;
 }
+*{
+  scroll-behavior: smooth;
+  resize: none;
+}

@@ -34,7 +34,15 @@
     width: 250px;
     height: 50px;
 }
+.btn{
+    width: 4rem;
+    height: 2.3rem;
+    border: none;
+    background-color: #2f7dc6;
+    border-radius: 8px;
+    color: #ffff;
 
+}
 
 .btnMenu,
 .btnClose{
