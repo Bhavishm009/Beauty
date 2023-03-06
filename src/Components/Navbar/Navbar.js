@@ -52,7 +52,7 @@ function Navbar() {
             <a href="/#contact">Contact</a>
 
             {!isUserLoggedIn ? (
-              <a href="/SingIn">LogIn</a>
+              <a href="/SingIn">Login</a>
             ) : (
               <>
                 <p>Hello, {isUserLoggedIn.name}</p>

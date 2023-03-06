@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {  useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
 import CustomButton from "../../Atom/Button/CustomButton";
 import Navbar from "../../Components/Navbar/Navbar";
 import { PricingList } from "../../ConstData/ProductData";
@@ -8,27 +8,25 @@ import { IsLogin } from "../../Recoil/Atom";
 import Style from "./Servicepage.module.css";
 function Servicepage() {
   const { id } = useParams();
- console.log(typeof(id))
+  console.log(typeof id);
   console.log(PricingList);
 
   const [deatails, setDeatails] = useState("");
 
-  let isUserLoggedIn = useRecoilValue(IsLogin)
+  let isUserLoggedIn = useRecoilValue(IsLogin);
   useEffect(() => {
     let Data = PricingList?.find((x) => x.id === +id);
     console.log(Data);
     setDeatails(Data);
   }, [id]);
 
-
   const price = deatails.rupe;
   var formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "INR",
-    minimumFractionDigits: 0, 
-   
+    minimumFractionDigits: 0,
   });
-  
+
   const loadScript = (src) => {
     return new Promise((resovle) => {
       const script = document.createElement("script");
@@ -90,17 +88,21 @@ function Servicepage() {
             <h4>{formatter.format(price)}</h4>
             <h6>{deatails.name}</h6>
             <p>{deatails.minutes}</p>
-       {isUserLoggedIn ? <CustomButton
-              ButtonText="Book Now"
-              className={Style.btn}
-              type="submit"
-              onClick={() => displayRazorpay(price)}
-            /> :  <CustomButton
-            ButtonText="Book Now"
-            className={Style.btn}
-            type="submit"
-            onClick={() => alert('Please Login/Register ')}
-          /> } 
+            {isUserLoggedIn ? (
+              <CustomButton
+                ButtonText="Book Now"
+                className={Style.btn}
+                type="submit"
+                onClick={() => displayRazorpay(price)}
+              />
+            ) : (
+              <CustomButton
+                ButtonText="Book Now"
+                className={Style.btn}
+                type="submit"
+                onClick={() => alert("Please Login/Register ")}
+              />
+            )}
           </div>
         </div>
       </div>
