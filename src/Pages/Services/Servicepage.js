@@ -12,7 +12,7 @@ function Servicepage() {
   console.log(PricingList);
 
   const [deatails, setDeatails] = useState("");
-  // let [isUserLoggedIn] = useRecoilState(IsLogin);
+
   let isUserLoggedIn = useRecoilValue(IsLogin)
   useEffect(() => {
     let Data = PricingList?.find((x) => x.id === +id);
@@ -21,7 +21,7 @@ function Servicepage() {
   }, [id]);
 
 
-  const laptopPrice = deatails.rupe;
+  const price = deatails.rupe;
   var formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "INR",
@@ -89,14 +89,14 @@ function Servicepage() {
         </div>
         <div className={Style.box2}>
           <div className={Style.text}>
-            <h4>{formatter.format(laptopPrice)}</h4>
+            <h4>{formatter.format(price)}</h4>
             <h6>{deatails.name}</h6>
             <p>{deatails.minutes}</p>
        {isUserLoggedIn ? <CustomButton
               ButtonText="Book Now"
               className={Style.btn}
               type="submit"
-              onClick={() => displayRazorpay(laptopPrice)}
+              onClick={() => displayRazorpay(price)}
             /> :  <CustomButton
             ButtonText="Book Now"
             className={Style.btn}

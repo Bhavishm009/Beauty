@@ -5,6 +5,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { useRecoilState } from "recoil";
 import { IsLogin } from "../../Recoil/Atom";
 import { animateScroll as scroll } from "react-scroll";
+import {  useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -19,6 +20,7 @@ function Navbar() {
     localStorage.removeItem("currentuser");
     setIsUserLoggedIn(false);
   }
+   let navigate = useNavigate()
   return (
     <header className={style.Navbar}>
       <div className={style.container}>
@@ -26,7 +28,8 @@ function Navbar() {
           className={style.logoImage}
           src={Diamond}
           alt="Beauty Parlour"
-          onClick={() => scroll.scrollToTop()}
+          // onClick={() => scroll.scrollToTop()}
+          onClick={()=> navigate('/')}
         />
         <nav
           className={
@@ -52,9 +55,8 @@ function Navbar() {
               <a href="/SingIn">LogIn</a>
             ) : (
               <>
-             
                 <p>Hello, {isUserLoggedIn.name}</p>
-                <button className={style.btn} onClick={handleLogout}>Logout</button>{" "}
+                <button className={style.btn} onClick={handleLogout}>Logout</button>
               </>
             )}
           </>

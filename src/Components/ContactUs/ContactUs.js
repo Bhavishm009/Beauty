@@ -66,26 +66,26 @@ function ContactUs() {
             <h1>Get In touch</h1>
             <p>Leave us a message</p>
             <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
+              {/* <label>Name</label> */}
               <input required
-                placeholder="Name"
+                placeholder=" Enter Your Name"
                 className={style.input}
                 type="text"
                 name="user_name"
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
               />
-              <label>Email</label>
+              {/* <label>Email</label> */}
               <input
               required
-                placeholder="Email"
+                placeholder="Enter Your Email"
                 className={style.input}
                 type="email"
                 name="user_email"
                 value={email}
                 onChange={(e)=>setEmail(e.target.value)}
               />
-              <label>Message</label>
+              {/* <label>Message</label> */}
               <textarea
               required
                 placeholder="Write your Message here"

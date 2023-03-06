@@ -18,7 +18,7 @@ export  const PricingList = [
       name: "Sweedish Massage",
       minutes: "60-80 minutes session",
       rupe:  1800,
-      img: "https://www.carnival.com/shop/medias/CAR-1018042-Couples-Swedish-Massage-50min-1392x575.jpg?context=bWFzdGVyfGltYWdlc3w4MzkxMHxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDFhLzg4MDQ0NzgxODk1OTguanBnfGMyMTdmYzc4MzI4M2I0YmU4NDM2MGYzNThjYzE2NGJhYzQxMjAwN2FiNDQ5OTQxYjVmM2UwNjRmYjZkZjMyMjQ&w=1232&h=647&resize_profile=pdphero",
+      img: "https://oceanamassage.com/omv3/wp-content/uploads/2022/11/massage.jpg",
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ export  const PricingList = [
       name: "Sports Massage",
       minutes: "30-40 minutes session",
       rupe:  500,
-      img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: "https://www.ebrookosteopathy.co.uk/wp-content/uploads/Sports-Massage-Hands-on-a-Feet.jpg",
     },
     {
       id: 6,

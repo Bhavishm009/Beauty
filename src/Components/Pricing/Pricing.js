@@ -28,7 +28,7 @@ function Pricing() {
                 <h1>{x.name}</h1>
                 <p>{x.minutes}</p>
               </div>
-              <p className={style.money}>{x.rupe}</p>
+              <p className={style.money}>₹{x.rupe}</p>
             </div>
           );
         })}
