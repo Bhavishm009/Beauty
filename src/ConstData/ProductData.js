@@ -11,14 +11,14 @@ export  const PricingList = [
       name: "Hot Stone Massage",
       minutes: "60-80 minutes session",
       rupe:  1500,
-      img: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: "https://gulfretail.com/wp-content/uploads/2016/11/Talise-Hot-Stone-Massage-by-Talise-Spa.jpg",
     },
     {
       id: 3,
       name: "Sweedish Massage",
       minutes: "60-80 minutes session",
       rupe:  1800,
-      img: "https://media.istockphoto.com/id/474945931/photo/woman-having-a-facial-massage.jpg?s=2048x2048&w=is&k=20&c=GoJ3Jx8Dcismg79e8hw3I_GTJqSK6OoFl3qmHTlljAk=",
+      img: "https://www.carnival.com/shop/medias/CAR-1018042-Couples-Swedish-Massage-50min-1392x575.jpg?context=bWFzdGVyfGltYWdlc3w4MzkxMHxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaDFhLzg4MDQ0NzgxODk1OTguanBnfGMyMTdmYzc4MzI4M2I0YmU4NDM2MGYzNThjYzE2NGJhYzQxMjAwN2FiNDQ5OTQxYjVmM2UwNjRmYjZkZjMyMjQ&w=1232&h=647&resize_profile=pdphero",
     },
     {
       id: 4,
@@ -29,8 +29,8 @@ export  const PricingList = [
     },
     {
       id: 5,
-      name: "Deep Tissue Massage",
-      minutes: "15-20 minutes session",
+      name: "Sports Massage",
+      minutes: "30-40 minutes session",
       rupe:  500,
       img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },

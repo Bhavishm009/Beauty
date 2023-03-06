@@ -10,7 +10,7 @@ function AboutUs() {
         <div className={style.AboutContent}>
           <h2>Why Our Clients Choose Us</h2>
           <p>
-            We are the leading beauty salon in Ankleshwar Providing high-quality
+            We are the leading beauty salon in Providing high-quality
             hairdressing, makeup and skin care services to everyone
           </p>
           <ul>
