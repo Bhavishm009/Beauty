@@ -8,16 +8,16 @@ import { IsLogin } from "../../Recoil/Atom";
 import Style from "./Servicepage.module.css";
 function Servicepage() {
   const { id } = useParams();
-
+ console.log(typeof(id))
   console.log(PricingList);
 
   const [deatails, setDeatails] = useState("");
-  let [isUserLoggedIn, setIsUserLoggedIn] = useRecoilState(IsLogin);
+  let [isUserLoggedIn] = useRecoilState(IsLogin);
   useEffect(() => {
-    let Data = PricingList?.find((x) => x.id == id);
+    let Data = PricingList?.find((x) => x.id === +id);
     console.log(Data);
     setDeatails(Data);
-  }, []);
+  }, [id]);
 
 
   const laptopPrice = deatails.rupe;

@@ -20,13 +20,6 @@ function CustomFooter() {
       <li><a href="/"><YoutubeFilled   style={{ fontSize: '32px', color: '#fff' }}/></a></li>
     </ul>
 
-    {/* <ul className={style.menu}>
-    <li>Home</li>
-    <li>Why Us</li>  
-    <li>Service</li>  
-    <li>Pricing</li>  
-    <li>Contact</li>  
-    </ul> */}
     <p>
     © 2023 Diamond Beauty Zone | Devloped By Bhavish | All Rights Reserved
     </p>

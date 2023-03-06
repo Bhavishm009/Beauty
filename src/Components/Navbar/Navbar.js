@@ -9,10 +9,12 @@ import { animateScroll as scroll } from "react-scroll";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   let [isUserLoggedIn, setIsUserLoggedIn] = useRecoilState(IsLogin);
-  console.log(IsLogin);
+  
+
   const toggleNavbar = () => {
     setToggle(!toggle);
   };
+
   function handleLogout() {
     localStorage.removeItem("currentuser");
     setIsUserLoggedIn(false);
@@ -50,8 +52,8 @@ function Navbar() {
               <a href="/SingIn">LogIn</a>
             ) : (
               <>
-                {" "}
-                <a>Hello, {isUserLoggedIn.name}</a>
+             
+                <p>Hello, {isUserLoggedIn.name}</p>
                 <button className={style.btn} onClick={handleLogout}>Logout</button>{" "}
               </>
             )}
